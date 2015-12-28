@@ -178,6 +178,7 @@ namespace Experis.JIRA
 
                                 StringBuilder header = new StringBuilder();
                                 header.Append("IssueID,");
+
                                 var listOfProperties = typeof(Fields).GetProperties();
                                 var listOfPropertiesOfIssue = listOfProperties.Select(x => x.Name);
 
